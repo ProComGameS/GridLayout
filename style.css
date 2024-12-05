@@ -1,0 +1,42 @@
+.header { grid-area: header; }
+.feature { grid-area: feature; }
+.feature2 { grid-area: feature2; }
+.feature3 { grid-area: feature3; }
+.sign-up { grid-area: sign-up; }
+.content { grid-area: content; }
+
+.grid-container{
+  display: grid;
+
+  grid-template-areas:
+    'header header header'
+    'feature feature2 feature3'
+    'sign-up sign-up sign-up'
+    'content content content';
+  gap: 1px;
+  background-color: #2196F3;
+}
+
+.header{
+ background-color: blue;
+}
+
+.feature{
+ background-color: yellow;
+}
+
+.feature2{
+  background-color: violet;
+}
+
+.feature3{
+  background-color: darkred;
+}
+
+.sign-up{
+ background-color: darkblue;
+}
+
+.content{
+ background-color: grey;
+}
