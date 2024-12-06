@@ -61,3 +61,44 @@
  background-color: grey;
 }
 
+
+
+@media (min-width: 800px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'header header'
+    'content content'
+    'sign-up feature'
+    'feature2 feature3'
+  }
+}
+
+  @media (min-width: 1200px) {
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    .grid-container {
+      display: grid;
+
+      grid-template-areas:
+    'header header header'
+    'feature feature2 feature3'
+    'sign-up sign-up sign-up'
+    'content content content';
+    }
+  }
+
+    @media (max-width: 799px) {
+      .grid-container {
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+    'header'
+    'feature'
+    'feature2'
+    'feature3'
+    'sign-up'
+    'content';
+      }
+    }
